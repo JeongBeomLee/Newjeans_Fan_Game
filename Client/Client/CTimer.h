@@ -21,4 +21,3 @@ public:
 public:
 	float GetDT()	{ return m_fDT; }
 };
-

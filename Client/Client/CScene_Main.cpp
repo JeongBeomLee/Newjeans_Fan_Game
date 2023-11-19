@@ -71,7 +71,7 @@ void CScene_Main::Enter()
 	CObject* pPlayerObj = new CPlayer;
 
 	pPlayerObj->SetName(L"Player");
-	pPlayerObj->SetPos(Vec2(5000.f, 0.f));
+	pPlayerObj->SetPos(Vec2(0.f, 0.f));
 
 	// 충돌체, 애니메이터 생성
 	pPlayerObj->CreateCollider();

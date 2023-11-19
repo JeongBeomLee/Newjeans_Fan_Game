@@ -2,9 +2,8 @@
 #include "CBackground.h"
 
 #include "CResourceMgr.h"
-#include "CAnimator.h"
-
 #include "CTexture.h"
+#include "CAnimator.h"
 #include "CAnimation.h"
 #include "CTimer.h"
 
@@ -34,7 +33,6 @@ void CBackground::render(HDC _dc)
 		CAnimation* pAnimation = GetAnimator()->FindAnimation(L"Start Background");
 		CTexture* pTexture = pAnimation->GetTexture();
 
-		// 카메라 영역에서 배경을 그러줌
 		TransparentBlt(_dc,
 			0,
 			0,
